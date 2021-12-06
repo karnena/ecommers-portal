@@ -50,6 +50,7 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 @app.get("/login")
 def read_item(user_name:str, password:str):
+    logging.info("login url called")
     if user_name in users_data:
         user = users_data[user_name]
         if str(user) == password:
