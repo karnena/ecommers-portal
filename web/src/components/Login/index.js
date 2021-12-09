@@ -40,16 +40,16 @@ class LoginForm extends Component {
     const { username, password } = this.state;
     const user_name =username
     const userDetails ={"user_name": "santosh", "password": "santosh@123"};
-    console.log(JSON.stringify(userDetails))
-    // const url = "https://apis.ccbp.in/login";
-    // const options = {
-    //   method: "POST",
-    //   headers: {"Accept":"*/*",
-    //   "Content-Type": "application/json"},
-    //   body: JSON.stringify(userDetails)
-    // }
-    const url = "http://127.0.0.1:8000/users_details/"
-    const response = await fetch(url);
+    // console.log(JSON.stringify(userDetails))
+    const url = "http://127.0.0.1:8000/login/";
+    const options = {
+      method: "POST",
+      headers: {
+      "Content-Type": "application/json"},
+      body: '{"user_name": "santosh", "password": "santosh@123"}'
+    }
+    // const url = "http://127.0.0.1:8000/users_details/"
+    const response = await fetch(url, options);
     const data = await response.json();
     console.log(data)
   //   if (response.ok === true) {
