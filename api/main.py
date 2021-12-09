@@ -1,6 +1,6 @@
 from typing import List
 import logging
-from fastapi import Depends, FastAPI, HTTPException
+from fastapi import Depends, FastAPI, HTTPException, status
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 from sharedlibrary import crud,models, schemas
@@ -9,13 +9,12 @@ from sharedlibrary.database import SessionLocal, engine
 from typing import Optional
 from jose import JWTError, jwt
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
 
 models.Base.metadata.create_all(bind=engine)
 
-logging.basicConfig(filename="newLog.log",
-format='%(message) s',
-filemode='w')
+logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.DEBUG)
 
 
 
@@ -109,11 +108,16 @@ def create_user(request:schemas.User,db: Session = Depends(get_db)):
     db.refresh(new_user)
     return new_user
 
+class LoginRequest(BaseModel):
+    user_name: str
+    password: str
 
 @app.post('/login')
-def login(request:schemas.Data,db:Session= Depends(get_db)):
-    logging.debug("ok")
+def login(request:LoginRequest,db:Session= Depends(get_db)):
+    logging.info(request)
     current_user=db.query(models.User).filter(models.User.user_name == request.user_name).first()
+    if not current_user:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail = f'No user found with this {request.user_name} username')
     hashedPassword = current_user.password
     
     is_valid=pwd_context.verify(request.password, hashedPassword)
@@ -122,3 +126,13 @@ def login(request:schemas.Data,db:Session= Depends(get_db)):
         return{"access_token":access_token, "token_type":"bearer"}
         
     return "user not found"
+
+
+class Data(BaseModel):
+    user: str
+
+
+@app.post("/test")
+def main(data: Data):
+    logging.debug(data)
+    return data

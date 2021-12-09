@@ -24,3 +24,7 @@ class Token(BaseModel):
     jwt_token:str
     class Config:
         orm_mode = True
+
+class LoginRequest(BaseModel):
+    user_name: str
+    password: str
