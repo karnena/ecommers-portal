@@ -14,6 +14,3 @@ class User(Base):
     email = Column(String)
     password = Column(String)
 
-class LoginRequest():
-    user_name: str
-    password: str

@@ -25,6 +25,8 @@ class Token(BaseModel):
     class Config:
         orm_mode = True
 
-class LoginRequest(BaseModel):
-    user_name: str
-    password: str
+
+class TokenData(BaseModel):
+    username: Optional[str] = None
+    class Config:
+        orm_mode = True

@@ -1,6 +1,8 @@
 import { Component } from "react";
 import Cookies from "js-cookie";
 import { Navigate } from "react-router-dom";
+import history from "../history";
+
 import "./index.css"
 
 class LoginForm extends Component {
@@ -11,6 +13,8 @@ class LoginForm extends Component {
     errorMsg: "",
   };
 
+  
+
   onChangeUsername = (event) => {
     this.setState({ username: event.target.value });
   };
@@ -19,15 +23,17 @@ class LoginForm extends Component {
     this.setState({ password: event.target.value });
   };
 
-  // onSubmitSuccess = (jwtToken) => {
-  //   const { history } = this.props;
+  onSubmitSuccess = (jwtToken) => {
+    // const { history } = this.props;
+    console.log(this.props, history)
 
-  //   Cookies.set("jwt_token", jwtToken, {
-  //     expires: 30,
-  //     path: "/",
-  //   });
-  //   history.replace("/");
-  // };
+    Cookies.set("jwt_token", jwtToken, {
+      expires: 30,
+      path: "/",
+    });
+    history.replace("/profile");
+    history.go(0)
+  };
 
   onSubmitFailure = (errorMsg) => {
     console.log(errorMsg);
@@ -38,25 +44,26 @@ class LoginForm extends Component {
     event.preventDefault();
     
     const { username, password } = this.state;
-    const user_name =username
-    const userDetails ={"user_name": "santosh", "password": "santosh@123"};
-    // console.log(JSON.stringify(userDetails))
+    const userDetails ={"user_name": username, "password": password};
+    console.log(JSON.stringify(userDetails), "ok")
     const url = "http://127.0.0.1:8000/login/";
     const options = {
       method: "POST",
       headers: {
       "Content-Type": "application/json"},
-      body: '{"user_name": "santosh", "password": "santosh@123"}'
+      body: JSON.stringify(userDetails)
+      // body: '{"user_name": "santosh", "password": "santosh@123"}'
     }
     // const url = "http://127.0.0.1:8000/users_details/"
     const response = await fetch(url, options);
     const data = await response.json();
+
     console.log(data)
-  //   if (response.ok === true) {
-  //     this.onSubmitSuccess(data.jwt_token);
-  //   } else {
-  //     this.onSubmitFailure(data.error_msg);
-  // }
+    if (response.ok === true) {
+      this.onSubmitSuccess(data.access_token);
+    } else {
+      this.onSubmitFailure(data.error_msg);
+  }
   };
 
   renderPasswordField = () => {
@@ -97,12 +104,16 @@ class LoginForm extends Component {
     );
   };
 
+
+
   render() {
+    console.log(this.props, "prop-check")
     const { showSubmitError, errorMsg } = this.state;
     const jwtToken = Cookies.get("jwt_token");
-    // if (jwtToken !== undefined) {
-    //   return <Navigate to="/" />;
-    // }
+    console.log("LoginForm working")
+    if (jwtToken !== undefined) {
+      return <Navigate to="/profile"/>;
+    }
     return (
       <div className="login-form-container">
         <img
@@ -125,7 +136,7 @@ class LoginForm extends Component {
           +33jX4YL3hC7pTUglnqJytYbk5djVthWG1lfYhmGetFFL0Wao1dIiFsBuL4kssz+yKBn8Yvhox0H3tL9SBTQ2xQl/ZwS2BXi9Vv6gcSOb2bT7m9DgRX/weeBN4BYURRe56T57pah1p8E6kOue7LV1DeAGOpZ98up4HlR/ZbWk9jr+bn5wr4trTsJ77fev7Wh/wdszsDRUG/AbgAAAABJRU5ErkJggg==" alt='comapny-logo' className="login-website-logo-desktop-image" />
           <div className="input-container">{this.renderUsernameField()}</div>
           <div className="input-container">{this.renderPasswordField()}</div>
-          <button type="submit" className="login-button">
+          <button type="submit"  className="login-button" >
             Login
           </button>
           {showSubmitError && <p className="error-message">*{errorMsg}</p>}
@@ -135,4 +146,4 @@ class LoginForm extends Component {
   }
 }
 
-export default LoginForm;
+export default   LoginForm ;
