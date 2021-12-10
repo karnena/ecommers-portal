@@ -278,3 +278,32 @@ DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcr
 INFO:uvicorn.error:Started server process [5864]
 INFO:uvicorn.error:Waiting for application startup.
 INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [9312]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [2104]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [2104]
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [9112]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+DEBUG:root:watching
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:root:watching
+INFO:root:user_name='santosh' password='santosh@123'
+INFO:root:user_name='santosh@123' password=''
+INFO:root:user_name='santosh' password='santosh!@3'
+DEBUG:root:watching
+DEBUG:root:watching
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:root:watching

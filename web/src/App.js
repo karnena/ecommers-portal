@@ -5,6 +5,7 @@ import TestButton from './components/Button/TestButton';
 import LoginForm from './components/Login'
 import Profile from './components/Profile/Profile';
 import history  from './components/history';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
   
     <Router history={history}>
       <Routes>
+        <Route exact path='/' element={<Home/>}/>
         <Route exact path="/login" element={<LoginForm />}></Route>
         <Route exact path='/profile' element={<Profile/>}></Route>
       </Routes>
