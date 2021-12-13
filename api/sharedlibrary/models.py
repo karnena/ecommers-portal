@@ -14,3 +14,11 @@ class User(Base):
     email = Column(String)
     password = Column(String)
 
+class Product(Base):
+    __tablename__ = "product_detail"
+
+    id=Column(Integer, primary_key=True, index=True)
+    product_name = Column(String)
+    image_url = Column(String)
+    price = Column(String)
+    rating = Column(String)

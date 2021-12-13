@@ -128,14 +128,43 @@ def login(request:LoginRequest,db:Session= Depends(get_db)):
     return "user not found"
 
 
-class Data(BaseModel):
-    user: str
+@app.post('/product')
+def create(request: schemas.ProductData,db:Session = Depends(get_db)):
+    new_product = models.Product(product_name = request.product_name, image_url = request.image_url, price = request.price, rating= request.rating)
+    db.add(new_product)
+    db.commit()
+    db.refresh(new_product)
+    return new_product
 
 
-@app.post("/test")
-def main(data: Data):
-    logging.debug(data)
-    return data
+@app.get('/product')
+def get_product(db: Session = Depends(get_db)):
+    productDetails = db.query(models.Product).all()
+    return productDetails
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# class Data(BaseModel):
+#     user: str
+
+
+# @app.post("/test")
+# def main(data: Data):
+#     logging.debug(data)
+#     return data
 
 
 # @app.post("/user")

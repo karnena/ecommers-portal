@@ -30,3 +30,11 @@ class TokenData(BaseModel):
     username: Optional[str] = None
     class Config:
         orm_mode = True
+
+class ProductData(BaseModel):
+    product_name : str
+    image_url : str
+    price : str
+    rating : str
+    class Config:
+        orm_mode = True

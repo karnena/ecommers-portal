@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Cookies from 'js-cookie'
 import history from '../history'
 import './index.css'
@@ -40,20 +41,20 @@ function Header() {
           {/* </Link> */}
           <ul className="nav-menu">
             <li className="nav-menu-item">
-              {/* <Link to="/" className="nav-link"> */}
+              <Link to="/" className="nav-link">
                 Home
-              {/* </Link> */}
+              </Link>
             </li>
 
             <li className="nav-menu-item">
-              {/* <Link to="/products" className="nav-link"> */}
+              <Link to="/product" className="nav-link">
                 Products
-              {/* </Link> */}
+              </Link>
             </li>
 
             <li className="nav-menu-item">
               {/* <Link to="/cart" className="nav-link"> */}
-                Cart
+                Favourite
               {/* </Link> */}
             </li>
           </ul>
