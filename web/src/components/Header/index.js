@@ -32,13 +32,13 @@ function Header() {
         </div> */}
 
         <div className="nav-bar-large-container">
-          {/* <Link to="/"> */}
+          <Link to="/">
             <img
               className="website-logo"
               src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png"
               alt="website logo"
             />
-          {/* </Link> */}
+          </Link>
           <ul className="nav-menu">
             <li className="nav-menu-item">
               <Link to="/" className="nav-link">
@@ -53,9 +53,9 @@ function Header() {
             </li>
 
             <li className="nav-menu-item">
-              {/* <Link to="/cart" className="nav-link"> */}
+              <Link to="/favorite" className="nav-link">
                 Favourite
-              {/* </Link> */}
+              </Link>
             </li>
           </ul>
           <button

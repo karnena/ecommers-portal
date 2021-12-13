@@ -7,6 +7,7 @@ import Profile from './components/Profile/Profile';
 import history  from './components/history';
 import Home from './components/Home';
 import AllProducts from './components/AllProducts/AllProducts';
+import Favorite from './components/Favorite/Favorite';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/login" element={<LoginForm />}></Route>
         <Route exact path='/profile' element={<Profile/>}></Route>
         <Route exact path='/product' element={<AllProducts/>}></Route>
+        <Route exact path='/favorite' element={<Favorite/>}></Route>
       </Routes>
     </Router>
   );

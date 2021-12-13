@@ -2,4 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-  }
+  }.search{
+    height: 40px;
+    width: 95%;
+    padding: 20px;
+    margin: 20px 25px;
+    border: 1px solid;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    }
