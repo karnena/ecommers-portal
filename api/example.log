@@ -344,3 +344,936 @@ INFO:uvicorn.error:Application startup complete.
 INFO:root:user_name='santosh' password='santosh@123'
 DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
 DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+INFO:root:user_name='santosh' password='santosh@123'
+INFO:root:user_name='vhg' password='jbh'
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [15764]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [13936]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [4948]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [1212]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [14092]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [1204]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 155, in test
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [6844]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 155, in test
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [12852]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 155, in test
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [14460]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [11356]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:user_name='santosh' password='santosh'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [9996]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [11640]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [15628]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [15840]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [13992]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [9480]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [14280]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [11784]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [13644]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [8476]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [10140]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [7204]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [708]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [15956]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [12064]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [12864]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [4324]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 153, in test
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [11184]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 153, in test
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 153, in test
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [10220]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [14012]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 153, in test
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [15180]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [15912]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 159, in run_endpoint_function
+    return await dependant.call(**values)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 153, in test
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [14540]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [15876]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [7132]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [16060]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [1380]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [1204]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [8072]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [12416]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [16116]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [10648]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 181, in get_fav
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 181, in get_fav
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 181, in get_fav
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [5092]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:user_name='tarun' password='tarun@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [16028]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [5832]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [15604]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [12496]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 184, in get_fav
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 184, in get_fav
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+INFO:root:user_name='santosh' password='santosh@123'
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [10196]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [5832]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 168, in create
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 157, in decode
+    _validate_claims(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 481, in _validate_claims
+    _validate_exp(claims, leeway=leeway)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 314, in _validate_exp
+    raise ExpiredSignatureError("Signature has expired.")
+jose.exceptions.ExpiredSignatureError: Signature has expired.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [1468]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [12776]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:root:user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+INFO:root:user_name='tarun' password='tarun@123'
+INFO:root:user_name='santosh' password='santsoh@123'
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jws.py", line 176, in _load
+    signing_input, crypto_segment = jwt.rsplit(b".", 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 142, in decode
+    payload = jws.verify(token, key, algorithms, verify=verify_signature)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jws.py", line 70, in verify
+    header, payload, signing_input, signature = _load(token)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jws.py", line 180, in _load
+    raise JWSError("Not enough segments")
+jose.exceptions.JWSError: Not enough segments
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 185, in get_fav
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\jose\jwt.py", line 144, in decode
+    raise JWTError(e)
+jose.exceptions.JWTError: Not enough segments
+INFO:root:user_name='santosh' password='santosh@123'
+INFO:root:user_name='tarun' password='tarun@123'

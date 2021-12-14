@@ -11,11 +11,7 @@ import Favorite from './components/Favorite/Favorite';
 
 function App() {
   return (
-    // <BrowserRouter>
-    // <Routes>
-    // <Route exact path='/' element={<LoginForm/>}/>
-    // </Routes>
-    // </BrowserRouter>
+    
 
   
     <Router history={history}>
@@ -27,6 +23,7 @@ function App() {
         <Route exact path='/favorite' element={<Favorite/>}></Route>
       </Routes>
     </Router>
+    // <TestButton/>
   );
 }
 

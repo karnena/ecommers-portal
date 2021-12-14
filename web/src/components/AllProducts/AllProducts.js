@@ -32,8 +32,9 @@ function AllProducts() {
     return (<>
     <Header/>
     <input placeholder='Search by name' className='search' type='search' onChange={changeValue} />
+    <h1 className='products-heading'>All Products</h1>
             <ul className="products-list">
-                {products.map(product => <Product key={product.id} productData = {product}/>)}
+                {filteredProducts.map(product => <Product key={product.id} productData = {product}/>)}
             </ul>
             </>
     )

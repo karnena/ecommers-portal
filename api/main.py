@@ -1,6 +1,7 @@
 from typing import List
 import logging
 from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi import security
 from sqlalchemy.orm import Session
 from passlib.context import CryptContext
 from sharedlibrary import crud,models, schemas
@@ -10,6 +11,7 @@ from typing import Optional
 from jose import JWTError, jwt
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer,OAuth2PasswordBearer, OAuth2PasswordRequestForm
 
 
 models.Base.metadata.create_all(bind=engine)
@@ -23,7 +25,7 @@ origins = [
     "http://127.0.0.1:8000/login",
     "http://localhost:3000",
     "http://localhost",
-    "http://localhost:8080",
+    "http://127.0.0.1:8000/testing",
 ]
 
 app.add_middleware(
@@ -58,7 +60,8 @@ def get_db():
     
 
 pwd_context= CryptContext(schemes=["bcrypt"],deprecated='auto')
-
+security = HTTPBearer()
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 @app.get("/users_details/")
 def read_users(db: Session = Depends(get_db)):
@@ -122,7 +125,7 @@ def login(request:LoginRequest,db:Session= Depends(get_db)):
     
     is_valid=pwd_context.verify(request.password, hashedPassword)
     if is_valid:
-        access_token = create_access_token(data={"sub": current_user.user_name})
+        access_token = create_access_token(data={"user_name": current_user.user_name})
         return{"access_token":access_token, "token_type":"bearer"}
         
     return "user not found"
@@ -141,6 +144,61 @@ def create(request: schemas.ProductData,db:Session = Depends(get_db)):
 def get_product(db: Session = Depends(get_db)):
     productDetails = db.query(models.Product).all()
     return productDetails
+
+
+
+@app.get('/testing')
+# async def test(credentials: HTTPAuthorizationCredentials = Depends(security)):
+async def test(token: jwt = Depends(oauth2_scheme)):
+    # payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+    
+    # return payload
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get("user_name")
+        return username
+    except:
+        return(token)
+
+
+
+@app.post("/favourite")
+def create(request:schemas.FavouriteData,db:Session=Depends(get_db),token: jwt = Depends(oauth2_scheme)):
+    
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+    username: str = payload.get("user_name")
+    
+    add_fav= models.Favourite(user_name=username,product_name=request.product_name,image_url=request.image_url,price=request.price,rating=request.rating)
+    db.add(add_fav)
+    db.commit()
+    db.refresh(add_fav)
+    return add_fav
+
+@app.get("/favourite")
+def get_fav(db:Session=Depends(get_db)):
+    favourites=db.query(models.Favourite).all()
+    return favourites
+
+
+@app.get('/user/favourite')
+def get_fav(token: jwt = Depends(oauth2_scheme),db:Session=Depends(get_db)):
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+    username: str = payload.get("user_name")
+    fav = db.query(models.Favourite).filter(models.Favourite.user_name == username).all()
+    return fav
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

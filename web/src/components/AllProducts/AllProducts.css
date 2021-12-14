@@ -2,6 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }.search{
     height: 40px;
     width: 95%;
@@ -12,4 +15,12 @@
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: normal;
+    }
+    .products-heading{
+        color: #475569;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 40px;
+
     }

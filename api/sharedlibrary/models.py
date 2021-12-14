@@ -22,3 +22,15 @@ class Product(Base):
     image_url = Column(String)
     price = Column(String)
     rating = Column(String)
+
+class Favourite(Base):
+    __tablename__ = "favorites"
+
+    id=Column(Integer, primary_key=True, index=True)
+    user_name = Column(String)
+    product_name = Column(String)
+    image_url = Column(String)
+    price = Column(String)
+    rating = Column(String)
+
+    

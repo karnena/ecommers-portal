@@ -1,16 +1,20 @@
 import React from 'react'
+import Cookies from 'js-cookie'
 
 
 
 function TestButton() {
     const cheking = async () => {
-        const url = "http://127.0.0.1:8000/test"
+        const url = "http://127.0.0.1:8000/testing"
+        const myToken = Cookies.get("jwt_token")
         const options = {
-            method: "POST",
+            method: "GET",
             headers:{
-                "Content-Type":"application/json"
+                "Content-Type":"application/json",
+                'Access-Control-Allow-Origin': "*",
+                "Authorization": "Bearer " + myToken
             },
-            body:'{"user":"santosh"}'
+            
         }
         const result = await fetch(url, options)
         if (result.ok){

@@ -38,3 +38,12 @@ class ProductData(BaseModel):
     rating : str
     class Config:
         orm_mode = True
+
+class FavouriteData(BaseModel):
+    user_name: str
+    product_name : str
+    image_url : str
+    price : str
+    rating : str
+    class Config:
+        orm_mode = True
