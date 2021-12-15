@@ -1,9 +1,37 @@
+import Cookies from 'js-cookie'
 import './FavouriteItem.css'
 
 
 const FavouriteItem = props => {
-  const {productData} = props
+  const {productData, refreshFav} = props
   const {product_name, image_url, rating, price} = productData
+
+  const changeList = () => {
+      refreshFav()
+  }
+
+  
+  const removeFromFav = () =>{
+    const url = "http://127.0.0.1:8000/user/favourite"
+    const myToken = Cookies.get("jwt_token")
+    const new_data = {"product_name": product_name}
+    const options = {
+        method: "DELETE",
+        headers:{
+            "Content-Type":"application/json",
+            'Access-Control-Allow-Origin': "*",
+            "Authorization": "Bearer " + myToken
+        },
+        body:JSON.stringify(new_data)
+        
+    }
+    fetch(url, options).then(response => 
+        response.json()
+        ).then(data => {
+            console.log(data)
+            changeList()
+        })
+}
 
  
 
@@ -13,7 +41,7 @@ const FavouriteItem = props => {
       <img src={image_url} alt="product" className="thumbnail" />
       <div className='add-to-favorite-container'>
       <h1 className="title">{product_name}</h1>
-      <img  className='add-to-favorite' src='https://cdn.vectorstock.com/i/1000x1000/02/33/delete-icon-blue-monochrome-color-vector-23770233.webp' alt='delete'/>
+      <img onClick={removeFromFav}  className='add-to-favorite' src='https://cdn.vectorstock.com/i/1000x1000/02/33/delete-icon-blue-monochrome-color-vector-23770233.webp' alt='delete'/>
       </div>
       {/* <p className="brand">by {brand}</p> */}
       <div className="product-details">

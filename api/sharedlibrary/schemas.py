@@ -47,3 +47,7 @@ class FavouriteData(BaseModel):
     rating : str
     class Config:
         orm_mode = True
+class DeleteData(BaseModel):
+    product_name: str
+    class Config:
+        orm_mode = True

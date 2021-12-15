@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {BsSearch} from 'react-icons/bs'
 import Cookies from 'js-cookie'
 import { Navigate } from 'react-router-dom'
 import Header from '../Header'
@@ -31,7 +32,17 @@ function AllProducts() {
     }
     return (<>
     <Header/>
-    <input placeholder='Search by name' className='search' type='search' onChange={changeValue} />
+    <div className="search-input-container">
+        <input
+          type="search"
+          className="search-input"
+          placeholder="Search"
+          value={searchInput}
+          onChange={changeValue}
+        />
+        <BsSearch />
+      </div>
+    
     <h1 className='products-heading'>All Products</h1>
             <ul className="products-list">
                 {filteredProducts.map(product => <Product key={product.id} productData = {product}/>)}

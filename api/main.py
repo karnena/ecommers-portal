@@ -3,6 +3,7 @@ import logging
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi import security
 from sqlalchemy.orm import Session
+from sqlalchemy import and_
 from passlib.context import CryptContext
 from sharedlibrary import crud,models, schemas
 from datetime import datetime, timedelta 
@@ -26,6 +27,7 @@ origins = [
     "http://localhost:3000",
     "http://localhost",
     "http://127.0.0.1:8000/testing",
+    "http://127.0.0.1:8000/user/favourite",
 ]
 
 app.add_middleware(
@@ -39,11 +41,11 @@ app.add_middleware(
 
 SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
 ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 30
+ACCESS_TOKEN_EXPIRE_MINUTES = 30000
 
 def create_access_token(data: dict):
     to_encode = data.copy()
-    expire = datetime.utcnow() + timedelta(minutes=15)
+    expire = datetime.utcnow() + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
@@ -147,6 +149,7 @@ def get_product(db: Session = Depends(get_db)):
 
 
 
+
 @app.get('/testing')
 # async def test(credentials: HTTPAuthorizationCredentials = Depends(security)):
 async def test(token: jwt = Depends(oauth2_scheme)):
@@ -188,11 +191,13 @@ def get_fav(token: jwt = Depends(oauth2_scheme),db:Session=Depends(get_db)):
     return fav
 
 
-
-
-
-
-
+@app.delete('/user/favourite')
+def del_fav(request: schemas.DeleteData,token: jwt = Depends(oauth2_scheme),db:Session=Depends(get_db)):
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+    username: str = payload.get("user_name")
+    db.query(models.Favourite).filter(and_(models.Favourite.product_name == request.product_name, models.Favourite.user_name ==username)).delete(synchronize_session=False)
+    db.commit()
+    return "done"
 
 
 
