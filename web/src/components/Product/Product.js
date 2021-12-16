@@ -72,38 +72,38 @@ const Product = props => {
 
     }
 
-    const removeFromFav = () =>{
+    const removeFromFav = () => {
         const url = "http://127.0.0.1:8000/user/favourite"
         const myToken = Cookies.get("jwt_token")
-        const new_data = {"product_name": product_name}
+        const new_data = { "product_name": product_name }
         const options = {
             method: "DELETE",
-            headers:{
-                "Content-Type":"application/json",
+            headers: {
+                "Content-Type": "application/json",
                 'Access-Control-Allow-Origin': "*",
                 "Authorization": "Bearer " + myToken
             },
-            body:JSON.stringify(new_data)
-            
+            body: JSON.stringify(new_data)
+
         }
-        fetch(url, options).then(response => 
+        fetch(url, options).then(response =>
             response.json()
-            ).then(data => {
-                console.log(data)
-                getFav()
-            })
+        ).then(data => {
+            console.log(data)
+            getFav()
+        })
     }
 
 
     const clickOnIcon = () => {
 
-    
-    const productNamesList = favsList.map(e => e.product_name)
-    if (productNamesList.includes(product_name)){
-        removeFromFav()
-    }else{
-        addToFav()
-    }
+
+        const productNamesList = favsList.map(e => e.product_name)
+        if (productNamesList.includes(product_name)) {
+            removeFromFav()
+        } else {
+            addToFav()
+        }
 
     }
 
@@ -118,7 +118,7 @@ const Product = props => {
     }
 
     const imageUrl = isFav ? "https://cdn.pixabay.com/photo/2020/12/09/16/40/medical-5817909_640.png" : "https://cdn.vectorstock.com/i/1000x1000/48/33/favorites-icon-black-on-white-vector-21584833.webp"
-    console.log(imageUrl)
+
     return (
 
         <li className="product-item">
@@ -127,7 +127,7 @@ const Product = props => {
                 <h1 className="title">{product_name}</h1>
                 <img onClick={clickOnIcon} className='add-to-favorite' src={imageUrl} alt='fav' />
             </div>
-           
+
             <div className="product-details">
                 <p className="price">Rs {price}/-</p>
                 <div className="rating-container">
@@ -140,7 +140,7 @@ const Product = props => {
                 </div>
             </div>
         </li>
-        
+
     )
 }
 export default Product

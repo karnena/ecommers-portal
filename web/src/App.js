@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 import './App.css';
 import TestButton from './components/Button/TestButton';
@@ -8,6 +8,7 @@ import history  from './components/history';
 import Home from './components/Home';
 import AllProducts from './components/AllProducts/AllProducts';
 import Favorite from './components/Favorite/Favorite';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
         <Route exact path='/profile' element={<Profile/>}></Route>
         <Route exact path='/product' element={<AllProducts/>}></Route>
         <Route exact path='/favorite' element={<Favorite/>}></Route>
+        <Route path="*" element={<NotFound/>}></Route>
       </Routes>
     </Router>
-    // <TestButton/>
+    
   );
 }
 
