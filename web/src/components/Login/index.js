@@ -45,7 +45,7 @@ class LoginForm extends Component {
     
     const { username, password } = this.state;
     const userDetails ={"user_name": username, "password": password};
-    console.log(JSON.stringify(userDetails), "ok")
+    
     const url = "http://127.0.0.1:8000/login/";
     const options = {
       method: "POST",
