@@ -7,7 +7,7 @@ import './Product.css'
 const Product = props => {
     const [favsList, changeFavList] = useState([])
     const { productData } = props
-    const { product_name, image_url, rating, price } = productData
+    const {id, product_name, image_url, rating, price } = productData
 
     useEffect(() => {
         const url = "http://127.0.0.1:8000/user/favourite"
@@ -30,17 +30,18 @@ const Product = props => {
     }, [])
 
     const addToFav = () => {
-        const url = "http://127.0.0.1:8000/favourite"
+        const url = `http://127.0.0.1:8000/favourite/${id}`
+        console.log(url)
         const myToken = Cookies.get("jwt_token")
-        const new_data = { "user_name": "", "product_name": product_name, "image_url": image_url, "price": price, "rating": rating }
+        // const new_data = { "user_name": "", "product_name": product_name, "image_url": image_url, "price": price, "rating": rating }
         const options = {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
                 'Access-Control-Allow-Origin': "*",
                 "Authorization": "Bearer " + myToken
-            },
-            body: JSON.stringify(new_data)
+            }
+            // body: JSON.stringify(new_data)
 
         }
         fetch(url, options).then(response =>
@@ -73,7 +74,7 @@ const Product = props => {
     }
 
     const removeFromFav = () => {
-        const url = "http://127.0.0.1:8000/user/favourite"
+        const url = `http://127.0.0.1:8000/user/favourite/delete/${id}`
         const myToken = Cookies.get("jwt_token")
         const new_data = { "product_name": product_name }
         const options = {

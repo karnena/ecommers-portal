@@ -34,8 +34,9 @@ class TokenData(BaseModel):
 class ProductData(BaseModel):
     product_name : str
     image_url : str
-    price : str
     rating : str
+    price : str
+    
     class Config:
         orm_mode = True
 

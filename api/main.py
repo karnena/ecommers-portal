@@ -119,7 +119,7 @@ class LoginRequest(BaseModel):
 
 @app.post('/login')
 def login(request:LoginRequest,db:Session= Depends(get_db)):
-    logging.info(request)
+    
     current_user=db.query(models.User).filter(models.User.user_name == request.user_name).first()
     if not current_user:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail = f'No user found with this {request.user_name} username')
@@ -127,7 +127,7 @@ def login(request:LoginRequest,db:Session= Depends(get_db)):
     
     is_valid=pwd_context.verify(request.password, hashedPassword)
     if is_valid:
-        access_token = create_access_token(data={"user_name": current_user.user_name})
+        access_token = create_access_token(data={"user_id": current_user.id})
         return{"access_token":access_token, "token_type":"bearer"}
         
     return "user not found"
@@ -158,20 +158,20 @@ async def test(token: jwt = Depends(oauth2_scheme)):
     # return payload
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-        username: str = payload.get("user_name")
+        username: str = payload.get("user_id")
         return username
     except:
         return(token)
 
 
 
-@app.post("/favourite")
-def create(request:schemas.FavouriteData,db:Session=Depends(get_db),token: jwt = Depends(oauth2_scheme)):
+@app.post("/favourite/{productId}")
+def create(productId: int,db:Session=Depends(get_db),token: jwt = Depends(oauth2_scheme)):
     
     payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-    username: str = payload.get("user_name")
+    userId: str = payload.get("user_id")
     
-    add_fav= models.Favourite(user_name=username,product_name=request.product_name,image_url=request.image_url,price=request.price,rating=request.rating)
+    add_fav= models.Favourite(user_id=userId,product_id=productId)
     db.add(add_fav)
     db.commit()
     db.refresh(add_fav)
@@ -186,16 +186,19 @@ def get_fav(db:Session=Depends(get_db)):
 @app.get('/user/favourite')
 def get_fav(token: jwt = Depends(oauth2_scheme),db:Session=Depends(get_db)):
     payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-    username: str = payload.get("user_name")
-    fav = db.query(models.Favourite).filter(models.Favourite.user_name == username).all()
-    return fav
+    
+    userId: int = payload.get("user_id")
+    
+    data = db.query(models.Product).select_from(models.Favourite).join(models.User, models.User.id == models.Favourite.user_id).join(models.Product, models.Product.id == models.Favourite.product_id).filter(models.User.id == userId).all()
+    # fav = db.query(models.Favourite).filter(models.Favourite.user_name == username).all()
+    return data
 
 
-@app.delete('/user/favourite')
-def del_fav(request: schemas.DeleteData,token: jwt = Depends(oauth2_scheme),db:Session=Depends(get_db)):
+@app.delete('/user/favourite/delete/{productId}')
+def del_fav(productId:int,token: jwt = Depends(oauth2_scheme),db:Session=Depends(get_db)):
     payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-    username: str = payload.get("user_name")
-    db.query(models.Favourite).filter(and_(models.Favourite.product_name == request.product_name, models.Favourite.user_name ==username)).delete(synchronize_session=False)
+    userId: int = payload.get("user_id")
+    db.query(models.Favourite).filter(and_(models.Favourite.product_id == productId, models.Favourite.user_id == userId)).delete(synchronize_session=False)
     db.commit()
     return "done"
 

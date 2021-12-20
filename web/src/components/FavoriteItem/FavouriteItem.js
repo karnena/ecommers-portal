@@ -4,7 +4,7 @@ import './FavouriteItem.css'
 
 const FavouriteItem = props => {
   const {productData, refreshFav} = props
-  const {product_name, image_url, rating, price} = productData
+  const {id,product_name, image_url, rating, price} = productData
 
   const changeList = () => {
       refreshFav()
@@ -12,7 +12,7 @@ const FavouriteItem = props => {
 
   
   const removeFromFav = () =>{
-    const url = "http://127.0.0.1:8000/user/favourite"
+    const url = `http://127.0.0.1:8000/user/favourite/delete/${id}`
     const myToken = Cookies.get("jwt_token")
     const new_data = {"product_name": product_name}
     const options = {
