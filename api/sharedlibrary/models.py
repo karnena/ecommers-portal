@@ -1,6 +1,7 @@
 # from typing import Text
 from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
 from sqlalchemy.orm import relationship
+from sqlalchemy.sql.expression import true
 # from sqlalchemy.sql.sqltypes import TEXT
 
 from sharedlibrary.database import Base
@@ -13,6 +14,16 @@ class Favourite(Base):
     product_id = Column(Integer, ForeignKey('product_detail.id')) 
     user = relationship("User", back_populates="products")
     product = relationship("Product", back_populates="users")
+
+class Hisory(Base):
+    __tablename__ = 'user_history'
+    id = Column(Integer, primary_key=True)
+    user_id = Column(Integer, ForeignKey('user_detail.id'))
+    created_on = Column(String)
+    created_by = Column(String)
+    detail = Column(String)
+    history = relationship("User", back_populates="owner")
+
 class User(Base):
     __tablename__ = "user_detail"
     id = Column(Integer, primary_key=True, index=True)
@@ -20,6 +31,7 @@ class User(Base):
     email = Column(String)
     password = Column(String)
     products = relationship('Favourite', back_populates='user')
+    owner = relationship("History", back_populates="history")
 class Product(Base):
     __tablename__ = "product_detail"
     id=Column(Integer, primary_key=True, index=True)

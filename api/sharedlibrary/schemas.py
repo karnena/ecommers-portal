@@ -52,3 +52,11 @@ class DeleteData(BaseModel):
     product_name: str
     class Config:
         orm_mode = True
+
+class HistoryData(BaseModel):
+    user_id : int
+    created_on : str 
+    created_by : str 
+    detail : str
+    class Config:
+        orm_mode = True

@@ -3253,3 +3253,626 @@ DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcr
 INFO:uvicorn.error:Started server process [13104]
 INFO:uvicorn.error:Waiting for application startup.
 INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [8048]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [272]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [3300]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [3300]
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [9152]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Shutting down
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [13636]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [7120]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [7116]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [5404]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [13588]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [14220]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [5320]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [13836]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [9928]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:root:email='santosh@gmail.com' user_name='santosh' password='santosh@123'
+DEBUG:passlib.handlers.bcrypt:detected 'bcrypt' backend, version '3.2.0'
+DEBUG:passlib.handlers.bcrypt:'bcrypt' backend lacks $2$ support, enabling workaround
+DEBUG:root:email='tarun@gmail.com' user_name='tarun' password='tarun@123'
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [7952]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [14028]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [1252]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [5544]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [9828]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [5544]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [8500]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 393, in _resolve_name
+    rval = d[token]
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\_collections.py", line 746, in __missing__
+    self[key] = val = self.creator(key)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 372, in _access_cls
+    return self.fallback[key]
+KeyError: 'History'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 123, in login
+    current_user=db.query(models.User).filter(models.User.user_name == request.user_name).first()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 2136, in query
+    return self._query_cls(entities, self, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 180, in __init__
+    self._set_entities(entities)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 187, in _set_entities
+    self._raw_columns = [
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 188, in <listcomp>
+    coercions.expect(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\coercions.py", line 180, in expect
+    insp._post_inspect
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1180, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 2139, in _post_inspect
+    self._check_configure()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1916, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3429, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3468, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1933, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\interfaces.py", line 231, in init
+    self.do_init()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2155, in do_init
+    self._generate_backref()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2491, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2082, in _add_reverse_property
+    if not other.mapper.common_parent(self.parent):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1113, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2146, in mapper
+    return self.entity.mapper
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1113, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2112, in entity
+    argument = self._clsregistry_resolve_name(self.argument)()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 397, in _resolve_name
+    self._raise_for_name(name, err)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 375, in _raise_for_name
+    util.raise_(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: When initializing mapper mapped class User->user_detail, expression 'History' failed to locate a name ('History'). If this is a class name, consider adding this relationship() to the <class 'sharedlibrary.models.User'> class after both dependent classes have been defined.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [11640]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 393, in _resolve_name
+    rval = d[token]
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\_collections.py", line 746, in __missing__
+    self[key] = val = self.creator(key)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 372, in _access_cls
+    return self.fallback[key]
+KeyError: 'History'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 123, in login
+    current_user=db.query(models.User).filter(models.User.user_name == request.user_name).first()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 2136, in query
+    return self._query_cls(entities, self, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 180, in __init__
+    self._set_entities(entities)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 187, in _set_entities
+    self._raw_columns = [
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 188, in <listcomp>
+    coercions.expect(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\coercions.py", line 180, in expect
+    insp._post_inspect
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1180, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 2139, in _post_inspect
+    self._check_configure()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1916, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3429, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3468, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1933, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\interfaces.py", line 231, in init
+    self.do_init()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2155, in do_init
+    self._generate_backref()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2491, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2082, in _add_reverse_property
+    if not other.mapper.common_parent(self.parent):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1113, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2146, in mapper
+    return self.entity.mapper
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1113, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2112, in entity
+    argument = self._clsregistry_resolve_name(self.argument)()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 397, in _resolve_name
+    self._raise_for_name(name, err)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 375, in _raise_for_name
+    util.raise_(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: When initializing mapper mapped class User->user_detail, expression 'History' failed to locate a name ('History'). If this is a class name, consider adding this relationship() to the <class 'sharedlibrary.models.User'> class after both dependent classes have been defined.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [2748]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 393, in _resolve_name
+    rval = d[token]
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\_collections.py", line 746, in __missing__
+    self[key] = val = self.creator(key)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 372, in _access_cls
+    return self.fallback[key]
+KeyError: 'History'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 124, in login
+    current_user=db.query(models.User).filter(models.User.user_name == request.user_name).first()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 2136, in query
+    return self._query_cls(entities, self, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 180, in __init__
+    self._set_entities(entities)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 187, in _set_entities
+    self._raw_columns = [
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 188, in <listcomp>
+    coercions.expect(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\coercions.py", line 180, in expect
+    insp._post_inspect
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1180, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 2139, in _post_inspect
+    self._check_configure()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1916, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3429, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3468, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1933, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\interfaces.py", line 231, in init
+    self.do_init()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2155, in do_init
+    self._generate_backref()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2491, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2082, in _add_reverse_property
+    if not other.mapper.common_parent(self.parent):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1113, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2146, in mapper
+    return self.entity.mapper
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1113, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2112, in entity
+    argument = self._clsregistry_resolve_name(self.argument)()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 397, in _resolve_name
+    self._raise_for_name(name, err)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 375, in _raise_for_name
+    util.raise_(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: When initializing mapper mapped class User->user_detail, expression 'History' failed to locate a name ('History'). If this is a class name, consider adding this relationship() to the <class 'sharedlibrary.models.User'> class after both dependent classes have been defined.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [9844]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 393, in _resolve_name
+    rval = d[token]
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\_collections.py", line 746, in __missing__
+    self[key] = val = self.creator(key)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 372, in _access_cls
+    return self.fallback[key]
+KeyError: 'History'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 124, in login
+    current_user=db.query(models.User).filter(models.User.user_name == request.user_name).first()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 2136, in query
+    return self._query_cls(entities, self, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 180, in __init__
+    self._set_entities(entities)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 187, in _set_entities
+    self._raw_columns = [
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 188, in <listcomp>
+    coercions.expect(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\coercions.py", line 180, in expect
+    insp._post_inspect
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1180, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 2139, in _post_inspect
+    self._check_configure()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1916, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3429, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3468, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1933, in _post_configure_properties
+    prop.init()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\interfaces.py", line 231, in init
+    self.do_init()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2155, in do_init
+    self._generate_backref()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2491, in _generate_backref
+    self._add_reverse_property(self.back_populates)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2082, in _add_reverse_property
+    if not other.mapper.common_parent(self.parent):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1113, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2146, in mapper
+    return self.entity.mapper
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1113, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\relationships.py", line 2112, in entity
+    argument = self._clsregistry_resolve_name(self.argument)()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 397, in _resolve_name
+    self._raise_for_name(name, err)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\clsregistry.py", line 375, in _raise_for_name
+    util.raise_(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+sqlalchemy.exc.InvalidRequestError: When initializing mapper mapped class User->user_detail, expression 'History' failed to locate a name ('History'). If this is a class name, consider adding this relationship() to the <class 'sharedlibrary.models.User'> class after both dependent classes have been defined.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 124, in login
+    current_user=db.query(models.User).filter(models.User.user_name == request.user_name).first()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 2136, in query
+    return self._query_cls(entities, self, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 180, in __init__
+    self._set_entities(entities)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 187, in _set_entities
+    self._raw_columns = [
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 188, in <listcomp>
+    coercions.expect(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\coercions.py", line 180, in expect
+    insp._post_inspect
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1180, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 2139, in _post_inspect
+    self._check_configure()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1916, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3429, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3464, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Hisory->user_history'. Original exception was: When initializing mapper mapped class User->user_detail, expression 'History' failed to locate a name ('History'). If this is a class name, consider adding this relationship() to the <class 'sharedlibrary.models.User'> class after both dependent classes have been defined.
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 375, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 75, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\applications.py", line 208, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 656, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 259, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\routing.py", line 61, in app
+    response = await func(request)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 226, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\fastapi\routing.py", line 161, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\starlette\concurrency.py", line 39, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\to_thread.py", line 28, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(func, *args, cancellable=cancellable,
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 818, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\anyio\_backends\_asyncio.py", line 754, in run
+    result = context.run(func, *args)
+  File "C:\Users\Admin\Documents\GitHub\ecommers-protal\api\.\main.py", line 124, in login
+    current_user=db.query(models.User).filter(models.User.user_name == request.user_name).first()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\session.py", line 2136, in query
+    return self._query_cls(entities, self, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 180, in __init__
+    self._set_entities(entities)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 187, in _set_entities
+    self._raw_columns = [
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\query.py", line 188, in <listcomp>
+    coercions.expect(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\sql\coercions.py", line 180, in expect
+    insp._post_inspect
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\util\langhelpers.py", line 1180, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 2139, in _post_inspect
+    self._check_configure()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 1916, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3429, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python39\lib\site-packages\sqlalchemy\orm\mapper.py", line 3464, in _do_configure_registries
+    raise e
+sqlalchemy.exc.InvalidRequestError: One or more mappers failed to initialize - can't proceed with initialization of other mappers. Triggering mapper: 'mapped class Hisory->user_history'. Original exception was: When initializing mapper mapped class User->user_detail, expression 'History' failed to locate a name ('History'). If this is a class name, consider adding this relationship() to the <class 'sharedlibrary.models.User'> class after both dependent classes have been defined.
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [9844]

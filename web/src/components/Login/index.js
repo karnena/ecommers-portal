@@ -46,15 +46,14 @@ class LoginForm extends Component {
     const { username, password } = this.state;
     const userDetails ={"user_name": username, "password": password};
     
-    const url = "http://127.0.0.1:8000/login/";
+    const url = "http://127.0.0.1:8000/login";
     const options = {
       method: "POST",
       headers: {
       "Content-Type": "application/json"},
       body: JSON.stringify(userDetails)
-      // body: '{"user_name": "santosh", "password": "santosh@123"}'
     }
-    // const url = "http://127.0.0.1:8000/users_details/"
+    
     const response = await fetch(url, options);
     const data = await response.json();
 

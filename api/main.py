@@ -27,6 +27,7 @@ origins = [
     "http://localhost:3000",
     "http://localhost",
     "http://127.0.0.1:8000/testing",
+    "http://127.0.0.1:8000/login",
     "http://127.0.0.1:8000/user/favourite",
 ]
 
@@ -69,7 +70,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 def read_users(db: Session = Depends(get_db)):
     logging.debug("watching")
     # users = crud.get_users(db, skip=skip, limit=limit)
-    usersDetails = db.query(models.User).all()
+    usersDetails = db.query(models.User).all() 
     return usersDetails
 
 
@@ -117,7 +118,7 @@ class LoginRequest(BaseModel):
     user_name: str
     password: str
 
-@app.post('/login')
+@app.post('/login/')
 def login(request:LoginRequest,db:Session= Depends(get_db)):
     
     current_user=db.query(models.User).filter(models.User.user_name == request.user_name).first()
@@ -127,8 +128,13 @@ def login(request:LoginRequest,db:Session= Depends(get_db)):
     
     is_valid=pwd_context.verify(request.password, hashedPassword)
     if is_valid:
-        access_token = create_access_token(data={"user_id": current_user.id})
+        # history_data = models.History(user_id = current_user.id, created_on = '00:00:00', created_by = current_user.user_name, detail = "login")
+        # db.add(history_data)
+        # db.commit()
+        # db.refresh(history_data)
+        access_token = create_access_token(data={"user_id": current_user.id}) 
         return{"access_token":access_token, "token_type":"bearer"}
+        
         
     return "user not found"
 
