@@ -9,6 +9,7 @@ import Home from './components/Home';
 import AllProducts from './components/AllProducts/AllProducts';
 import Favorite from './components/Favorite/Favorite';
 import NotFound from './components/NotFound/NotFound';
+import ProductDetails from './components/ProductDetails';
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
         <Route exact path='/profile' element={<Profile/>}></Route>
         <Route exact path='/product' element={<AllProducts/>}></Route>
         <Route exact path='/favorite' element={<Favorite/>}></Route>
+        <Route  path='/details/:id' element={<ProductDetails/>}></Route>
         <Route path="*" element={<NotFound/>}></Route>
+
       </Routes>
     </Router>
     

@@ -1,4 +1,5 @@
 import Cookies from 'js-cookie';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import './Product.css'
@@ -123,7 +124,8 @@ const Product = props => {
     return (
 
         <li className="product-item">
-            <img src={image_url} alt="product" className="thumbnail" />
+            <Link to={ `/details/${id}` }><img src={image_url} alt="product" className="thumbnail" />
+            </Link>
             <div className='add-to-favorite-container'>
                 <h1 className="title">{product_name}</h1>
                 <img onClick={clickOnIcon} className='add-to-favorite' src={imageUrl} alt='fav' />
