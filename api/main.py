@@ -1,4 +1,5 @@
 from typing import List
+import time
 import logging
 from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi import security
@@ -128,10 +129,12 @@ def login(request:LoginRequest,db:Session= Depends(get_db)):
     
     is_valid=pwd_context.verify(request.password, hashedPassword)
     if is_valid:
-        # history_data = models.History(user_id = current_user.id, created_on = '00:00:00', created_by = current_user.user_name, detail = "login")
-        # db.add(history_data)
-        # db.commit()
-        # db.refresh(history_data)
+        t = time.localtime()
+        current_time = time.strftime("%H:%M:%S", t)
+        history_data = models.History(user_id = current_user.id, created_on = current_time, created_by = current_user.user_name, detail = "User Logged Into his Account")
+        db.add(history_data)
+        db.commit()
+        db.refresh(history_data)
         access_token = create_access_token(data={"user_id": current_user.id}) 
         return{"access_token":access_token, "token_type":"bearer"}
         
@@ -176,11 +179,18 @@ def create(productId: int,db:Session=Depends(get_db),token: jwt = Depends(oauth2
     
     payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
     userId: str = payload.get("user_id")
+    current_user=db.query(models.User).filter(models.User.id == userId).first()
     
     add_fav= models.Favourite(user_id=userId,product_id=productId)
     db.add(add_fav)
     db.commit()
     db.refresh(add_fav)
+    t = time.localtime()
+    current_time = time.strftime("%H:%M:%S", t)
+    history_data = models.History(user_id = userId, created_on = current_time, created_by = current_user.user_name, detail = "Product Added to Favourites")
+    db.add(history_data)
+    db.commit()
+    db.refresh(history_data)
     return add_fav
 
 @app.get("/favourite")
@@ -204,8 +214,18 @@ def get_fav(token: jwt = Depends(oauth2_scheme),db:Session=Depends(get_db)):
 def del_fav(productId:int,token: jwt = Depends(oauth2_scheme),db:Session=Depends(get_db)):
     payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
     userId: int = payload.get("user_id")
+    current_user=db.query(models.User).filter(models.User.id == userId).first()
+    t = time.localtime()
+    current_time = time.strftime("%H:%M:%S", t)
+
+    # userName : str = payload.get("user_name")
     db.query(models.Favourite).filter(and_(models.Favourite.product_id == productId, models.Favourite.user_id == userId)).delete(synchronize_session=False)
     db.commit()
+    history_data = models.History(user_id = userId, created_on = current_time, created_by = current_user.user_name, detail = "Product Removed From Favourite")
+    db.add(history_data)
+    db.commit()
+    db.refresh(history_data)
+    
     return "done"
 
 

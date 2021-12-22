@@ -15,7 +15,7 @@ class Favourite(Base):
     user = relationship("User", back_populates="products")
     product = relationship("Product", back_populates="users")
 
-class Hisory(Base):
+class History(Base):
     __tablename__ = 'user_history'
     id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey('user_detail.id'))
