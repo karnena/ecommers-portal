@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 
 import Tridi from 'react-tridi';
+import ThreeSixty from 'react-360-view'
 import 'react-tridi/dist/index.css';
 
 
@@ -33,14 +34,15 @@ const ThreeD = () => {
 	}
 
 	return (
-		<div style={{ width: '500px' }}>
+		<>
+		{/* <div style={{ width: '500px' }}>
 			<Tridi
 				ref={tridiRef}
-				location="../images"
+				location="https://res.cloudinary.com/santoshk/image/upload/v1640325200/images"
 				format="jpg"
 				count="36"
 				onFrameChange={frameChangeHandler}
-				// autoplaySpeed={70}
+				autoplaySpeed={70}
 				onAutoplayStart={() => setIsAutoPlayRunning(true)}
 				onAutoplayStop={() => setIsAutoPlayRunning(false)}
 				onRecordStart={recordStartHandler}
@@ -62,7 +64,14 @@ const ThreeD = () => {
 			<button onClick={() => tridiRef.current.toggleAutoplay(!isAutoPlayRunning)}>
 				{isAutoPlayRunning ? 'Pause' : 'Autoplay'}
 			</button>
-		</div>
+		</div> */}
+		<ThreeSixty
+    amount={36}
+    imagePath="https://res.cloudinary.com/santoshk/image/upload/v1640325200/images"
+    fileName="{index}.jpg"
+/>
+</>
+
 	);
 };
 
