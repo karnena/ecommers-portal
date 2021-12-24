@@ -10,6 +10,7 @@ import AllProducts from './components/AllProducts/AllProducts';
 import Favorite from './components/Favorite/Favorite';
 import NotFound from './components/NotFound/NotFound';
 import ProductDetails from './components/ProductDetails';
+import ThreeD from './components/ThreeD';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path='/favorite' element={<Favorite/>}></Route>
         <Route  path='/details/:id' element={<ProductDetails/>}></Route>
         <Route path="*" element={<NotFound/>}></Route>
+        <Route path="/t" element={<ThreeD/>}></Route>
 
       </Routes>
     </Router>
