@@ -5875,3 +5875,11 @@ DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcr
 INFO:uvicorn.error:Started server process [10368]
 INFO:uvicorn.error:Waiting for application startup.
 INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [9108]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+DEBUG:passlib.registry:registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+INFO:uvicorn.error:Started server process [12248]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
