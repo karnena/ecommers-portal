@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 
 import Tridi from 'react-tridi';
-import ThreeSixty from 'react-360-view'
+// import ThreeSixty from 'react-360-view'
 import 'react-tridi/dist/index.css';
 
 
@@ -35,7 +35,7 @@ const ThreeD = () => {
 
 	return (
 		<>
-		{/* <div style={{ width: '500px' }}>
+		<div style={{ width: '1500px' }}>
 			<Tridi
 				ref={tridiRef}
 				location="https://res.cloudinary.com/santoshk/image/upload/v1640325200/images"
@@ -64,12 +64,12 @@ const ThreeD = () => {
 			<button onClick={() => tridiRef.current.toggleAutoplay(!isAutoPlayRunning)}>
 				{isAutoPlayRunning ? 'Pause' : 'Autoplay'}
 			</button>
-		</div> */}
-		<ThreeSixty
+		</div>
+		{/* <ThreeSixty
     amount={36}
     imagePath="https://res.cloudinary.com/santoshk/image/upload/v1640325200/images"
     fileName="{index}.jpg"
-/>
+/> */}
 </>
 
 	);

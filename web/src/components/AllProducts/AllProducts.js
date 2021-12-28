@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import {BsSearch} from 'react-icons/bs'
+import React, { useState, useEffect } from 'react'
+import { BsSearch } from 'react-icons/bs'
 import Cookies from 'js-cookie'
 import { Navigate } from 'react-router-dom'
 import Header from '../Header'
@@ -13,7 +13,10 @@ function AllProducts() {
     const changeValue = e => {
         changeSearchInput(e.target.value)
     }
-    useEffect(()=>{
+
+
+
+    useEffect(() => {
         fetch('http://127.0.0.1:8000/product').then(
             response => {
                 return response.json()
@@ -27,28 +30,29 @@ function AllProducts() {
     console.log(products)
     const filteredProducts = products.filter(product => product.product_name.toLowerCase().includes(searchInput.toLowerCase()))
     const jwtToken = Cookies.get("jwt_token")
-    if (jwtToken === undefined){
-        return <Navigate to ="/loign"/>
+    if (jwtToken === undefined) {
+        return <Navigate to="/loign" />
     }
     return (<>
-    <Header/>
-    <div className="search-input-container">
-        <input
-          type="search"
-          className="search-input"
-          placeholder="Search"
-          value={searchInput}
-          onChange={changeValue}
-        />
-        <BsSearch />
-      </div>
-    
-    <h1 className='products-heading'>All Products</h1>
-            <ul className="products-list">
-                {filteredProducts.map(product => <Product key={product.id} productData = {product}/>)}
-            </ul>
-            </>
+        <Header />
+        <div className="search-input-container">
+            <input
+                type="search"
+                className="search-input"
+                placeholder="Search"
+                value={searchInput}
+                onChange={changeValue}
+            />
+            <BsSearch />
+        </div>
+
+        <h1 className='products-heading'>All Products</h1>
+        <ul className="products-list">
+            {filteredProducts.map(product => <Product key={product.id} productData={product} />)}
+        </ul>
+    </>
     )
 }
+
 
 export default AllProducts
