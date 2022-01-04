@@ -107,7 +107,7 @@ class LoginForm extends Component {
 
   render() {
     console.log(this.props, "prop-check")
-    const { showSubmitError, errorMsg } = this.state;
+    const { showSubmitError} = this.state;
     const jwtToken = Cookies.get("jwt_token");
     console.log("LoginForm working")
     if (jwtToken !== undefined) {
@@ -144,4 +144,4 @@ class LoginForm extends Component {
   }
 }
 
-export default   LoginForm ;
+export default   LoginForm;

@@ -1,7 +1,7 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.css';
-import TestButton from './components/Button/TestButton';
+// import TestButton from './components/Button/TestButton';
 import LoginForm from './components/Login'
 import Profile from './components/Profile/Profile';
 import history  from './components/history';

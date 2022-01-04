@@ -135,8 +135,9 @@ def login(request:LoginRequest,db:Session= Depends(get_db)):
         db.add(history_data)
         db.commit()
         db.refresh(history_data)
-        access_token = create_access_token(data={"user_id": current_user.id}) 
-        return{"access_token":access_token, "token_type":"bearer"}
+        returnData = {"user_name": current_user.user_name, "email": current_user.email}
+        access_token = create_access_token(data={"user_id": current_user.id, "user_name": current_user.user_name, "email": current_user.email}) 
+        return{"access_token":access_token, "token_type":"bearer", "user_data": returnData}
         
         
     return "user not found"
